@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Conference Management",
+        "image": "https://images.pexels.com/photos/716281/pexels-photo-716281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "price": "$15000",
+        "short_description": "Plan and execute corporate conferences.",
+        "long_description": "Our Conference Management service is designed to ensure the success of your corporate conferences. We handle everything from venue selection and logistics to speaker coordination and attendee registration. With our expertise, your conferences will run smoothly, leaving a lasting impression on your attendees."
+    },
+    {
+        "id": 2,
+        "name": "Trade Show and Expo Planning",
+        "image": "https://images.unsplash.com/photo-1562141960-c9a127257324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "price": "$20000",
+        "short_description": "Organize trade shows and expos.",
+        "long_description": "Our Trade Show and Expo Planning service is dedicated to creating memorable experiences for your attendees. We handle booth design, exhibitor coordination, and promotional activities. With our expertise, your trade shows and expos will attract a diverse audience and generate valuable leads."
+    },
+    {
+        "id": 3,
+        "name": "Team Building Workshops",
+        "image": "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "price": "$12000",
+        "short_description": "Facilitate team building activities.",
+        "long_description": "Our Team Building Workshops are designed to strengthen teamwork and collaboration within your organization. We offer a variety of engaging activities and exercises tailored to your team's needs. Through our workshops, your team will build stronger bonds and enhance their problem-solving skills."
+    },
+    {
+        "id": 4,
+        "name": "Product Launch Services",
+        "image": "https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "price": "$1800",
+        "short_description": "Plan and launch new products successfully.",
+        "long_description": "Our Product Launch Services are focused on making your product launches a resounding success. From crafting compelling launch strategies to coordinating launch events, we ensure that your products get the attention they deserve. Let us help you make a memorable impact in the market."
+    },
+    {
+        "id": 5,
+        "name": "Corporate Meeting Coordination",
+        "image": "https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "price": "$10000",
+        "short_description": "Organize corporate meetings and gatherings.",
+        "long_description": "Our Corporate Meeting Coordination service takes the stress out of organizing meetings and gatherings. We handle everything from venue selection to audiovisual setup, ensuring that your meetings run smoothly. With our attention to detail, you can focus on the content and objectives of your meetings."
+    },
+    {
+        "id": 6,
+        "name": "Award Ceremonies Management",
+        "image": "https://images.pexels.com/photos/2098604/pexels-photo-2098604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "price": "$15000",
+        "short_description": "Coordinate award ceremonies and recognitions.",
+        "long_description": "Our Award Ceremonies Management service is dedicated to celebrating excellence within your organization. From selecting the perfect venue to crafting the ceremony program, we ensure that your award ceremonies are memorable and meaningful. Let us help you honor your outstanding employees and achievements."
+    }
+]
