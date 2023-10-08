@@ -3,14 +3,22 @@ import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
 
 const Nav = () => {
-    const { user, logOut } = useContext(AuthContext)
+    const { user, logOut,loading } = useContext(AuthContext)
     const navLinks =
         <>
             <li> <NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/contact">Contact Us</NavLink></li>
         </>
-    const image = "/images/stock/photo-1534528741775-53994a69daeb.jpg"
+        if (loading) {
+            return(
+            <div className='flex items-center justify-center h-[100vh]'>
+                <span className="w-28 loading loading-infinity"></span>
+            </div>
+            )
+        }
+    const image =  `${user.photoURL}` || "/images/stock/photo-1534528741775-53994a69daeb.jpg"
+    console.log(user.photoURL);
     return (
         <>
             <div className="container mx-auto navbar bg-base-100">

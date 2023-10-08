@@ -6,6 +6,7 @@ import Services from "./Services/Services";
 const Home = () => {
     return (
         <>
+        
         <Banner></Banner>
         <Services></Services>
         <OurLocation></OurLocation>

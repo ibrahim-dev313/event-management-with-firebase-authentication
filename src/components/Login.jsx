@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
@@ -16,16 +17,21 @@ const Login = () => {
                 console.log(res.user)
                 navigate(location?.state ? location.state : "/")
             })
-            .catch()
+            .catch(err => { console.log(err.code);
+                if(err.code=="auth/invalid-login-credentials"){
+                    return toast.error("Email & Password does not match")
+                }
+            })
+            
     }
     const handleGoogleSignIn = () => {
         googleLogin()
             .then(res => {
-                console.log(res.user)
+                // console.log(res.user)
                 navigate(location?.state? location.state : "/")
 
             })
-            .catch(err => console.error(err))
+            .catch(err => console.error(err.message))
     }
     return (
         <div className="flex items-center justify-center w-full min-h-screen bg-base-200">
@@ -62,6 +68,8 @@ const Login = () => {
 
                 </div>
             </div>
+            <Toaster />
+
         </div>
     );
 };
