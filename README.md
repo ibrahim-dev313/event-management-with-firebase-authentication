@@ -27,4 +27,4 @@ We welcome contributions from the open-source community. If you'd like to contri
 
 If you have any questions or need assistance, please reach out to our support team at support@rkeventz.com.
 
-Thank you for choosing Eventz for your event planning needs!
+Thank you for choosing Eventz for your event planning 

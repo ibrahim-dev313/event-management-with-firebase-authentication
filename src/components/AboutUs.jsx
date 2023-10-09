@@ -611,20 +611,19 @@ const AboutUs = () => {
                   About Us
                 </span>
                 <h2 className="mb-8 text-3xl font-bold text-dark sm:text-4xl">
-                  Welcome to Eventz - Your Event Planning Partner
+                  Welcome to RK Eventz - Your Event Planning Partner
                 </h2>
                 <p className="mb-8 text-base text-body-color">
                   At Eventz, we are passionate about creating memorable
-                  experiences. Whether it's a wedding, corporate event, or a
-                  special celebration, we're here to make your dreams come true.
+                  experiences. Whether it's a  corporate event, or a
+                  product expo, we're here to make your dreams come true.
                   Our team of dedicated professionals is committed to delivering
                   top-notch event planning services.
                 </p>
                 <p className="mb-8 text-base text-body-color">
                   With years of experience and a keen eye for detail, we ensure
                   every event is executed flawlessly. We take care of the
-                  logistics, design, and coordination so you can relax and
-                  enjoy your special moments.
+                  logistics, design, and coordination so you can relax.
                 </p>
                 <a
                   href="/#"

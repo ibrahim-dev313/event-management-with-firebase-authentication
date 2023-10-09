@@ -3,20 +3,14 @@ import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
 
 const Nav = () => {
-    const { user, logOut, loading } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
     const navLinks =
         <>
             <li> <NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/contact">Contact Us</NavLink></li>
         </>
-    if (loading) {
-        return (
-            <div className='flex items-center justify-center h-[40vh]'>
-                <span className="w-28 loading loading-infinity"></span>
-            </div>
-        )
-    }
+    
     
     return (
         <>

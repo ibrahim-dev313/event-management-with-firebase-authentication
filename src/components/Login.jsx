@@ -15,25 +15,35 @@ const Login = () => {
         signIn(email, password)
             .then(res => {
                 console.log(res.user)
-                navigate(location?.state ? location.state : "/")
+                toast.success("Log In Successful");
+
+                setTimeout(() => {
+                    navigate(location?.state ? location.state : "/");
+                }, 2000);
+
             })
             .catch(err => {
                 console.log(err.code);
                 if (err.code == "auth/invalid-login-credentials") {
-                    
+
                     return toast.error("Email & Password does not match")
                 }
             })
-            setLoading(false)
+        setLoading(false)
     }
     const handleGoogleSignIn = () => {
         googleLogin()
             .then(res => {
-                // console.log(res.user)
-                navigate(location?.state ? location.state : "/")
+                console.log(res.user)
+                toast.success("Log In Successful");
+
+                setTimeout(() => {
+                    navigate(location?.state ? location.state : "/");
+                }, 2000);
 
             })
-            .catch(err => console.error(err.message))
+         
+            .catch(err => { console.error(err.message) })
     }
     return (
         <>
