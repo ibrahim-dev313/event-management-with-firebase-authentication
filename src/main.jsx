@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import Login from './components/Login';
@@ -23,6 +25,16 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: ()=>fetch("/data.json")
+      },
+      {
+        path: "/about",
+        element: <AboutUs></AboutUs>,
+  
+      },
+      {
+        path: "/contact",
+        element: <ContactUs></ContactUs>,
+
       },
       {
         path: "/service-details/:id",

@@ -12,14 +12,12 @@ const Nav = () => {
         </>
     if (loading) {
         return (
-            <div className='flex items-center justify-center h-[100vh]'>
+            <div className='flex items-center justify-center h-[40vh]'>
                 <span className="w-28 loading loading-infinity"></span>
             </div>
         )
     }
-    // const name = `${user?.displayName}` || " "
-    // const image = `${user?.photoURL}` || "/images/stock/photo-1534528741775-53994a69daeb.jpg"
-    // // console.log(user.photoURL);
+    
     return (
         <>
             <div className="container mx-auto navbar bg-base-100">
@@ -51,10 +49,10 @@ const Nav = () => {
                 </div>
                 <div className="navbar-end">
                     <div className='flex items-center gap-3'>
-                        {/* <div>{name}</div> */}
+                        <div>{user?.displayName}</div>
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
-                                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                <img src={user?.photoURL} />
                             </div>
                         </label>
                         {
